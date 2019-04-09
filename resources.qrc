@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>BanchouCRC.ico</file>
+        <file>BanchouCRC.png</file>
+        <file>files/dai.jpg</file>
+        <file>BanchouCRC.desktop</file>
+    </qresource>
+</RCC>
