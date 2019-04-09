@@ -3,3 +3,4 @@
 .qmake.stash
 BanchouCRC
 Makefile
+*.exe
