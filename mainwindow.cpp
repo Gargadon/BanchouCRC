@@ -41,7 +41,7 @@ void MainWindow::on_escanear_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         int final = archivo.count();
         Crc32 crc32;
         for (int i=0;i<final;i++)
@@ -67,7 +67,7 @@ void MainWindow::on_md5_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         QCryptographicHash hash(QCryptographicHash::Md5);
         int final = archivo.count();
         for(int i=0;i<final;i++)
@@ -104,7 +104,7 @@ void MainWindow::on_sha1_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         QCryptographicHash hash(QCryptographicHash::Sha1);
         int final = archivo.count();
         for(int i=0;i<final;i++)
@@ -140,7 +140,7 @@ void MainWindow::on_sha256_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         QCryptographicHash hash(QCryptographicHash::Sha256);
         int final = archivo.count();
         for(int i=0;i<final;i++)
@@ -177,7 +177,7 @@ void MainWindow::on_sha512_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         QCryptographicHash hash(QCryptographicHash::Sha512);
         int final = archivo.count();
         for(int i=0;i<final;i++)
@@ -233,7 +233,7 @@ void MainWindow::on_putcrc32_clicked()
     {
         ui->salida->clear();
         QString origen2 = ui->archivos->toPlainText();
-        QStringList archivo = origen2.split(QRegExp("[\n]"),QString::SkipEmptyParts);
+        QStringList archivo = origen2.replace("file:///","").split(QRegExp("[\n]"),QString::SkipEmptyParts);
         int final = archivo.count();
         Crc32 crc32;
         for (int i=0;i<final;i++)
