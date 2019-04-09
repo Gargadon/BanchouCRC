@@ -2,3 +2,4 @@
 *.o
 .qmake.stash
 BanchouCRC
+Makefile
