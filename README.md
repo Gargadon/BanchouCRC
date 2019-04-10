@@ -1,2 +1,2 @@
 # BanchouCRC
-CRC calculator GUI
+CRC32 calculator GUI
