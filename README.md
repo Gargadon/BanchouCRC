@@ -1,2 +1,2 @@
 # BanchouCRC
-CRC32 calculator GUI
+CRC32 checksum generator GUI
