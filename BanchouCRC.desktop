@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=BanchouCRC
-Comment=CRC32, MD5 and SHA checksum calculator GUI
-Exec=BanchouCRC
-Icon=BanchouCRC
-Categories=Utility;

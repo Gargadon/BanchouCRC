@@ -4,3 +4,4 @@
 BanchouCRC
 Makefile
 *.exe
+build/*
