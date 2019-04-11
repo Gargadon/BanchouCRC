@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=BanchouCRC
+Comment=CRC32 checksum generator GUI
+Exec=BanchouCRC
+Icon=BanchouCRC
+Categories=Utility;
